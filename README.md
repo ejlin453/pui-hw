@@ -1,5 +1,5 @@
 # PUI homework
 
-Deployed website: `add the URL to your deployed website`
+Deployed website: `https://ejlin453.github.io/pui-hw//`
 
-Repository link: `add the URL to this repository`
+Repository link: `https://github.com/ejlin453/pui-hw`
