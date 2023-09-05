@@ -4,48 +4,60 @@
   <title>Bun Bun bake shop</title>
   <link rel="stylesheet" href="css/style.css">
   <!---only show original cinnamon roll-->
+
   <body>
-    <div class="logo">
-      <a href="index.html"><img class="logo-image" src="assets/logo/logo-01.svg"></a>
-    </div>
+    <a class="logo" href="index.html"><img class="logo-image" src="assets/logo/logo-01.svg"></a>
 
       <hr>
 
-    <div class="Product">
-      <h3><span class="highlight"><a href="index.html">PRODUCTS</a></span></h3>
-      <a href="shoppingcart.html">CART</a>
+    <div class="product">
+      <h3><span class="highlight"><a class="head-link" href="index.html">PRODUCTS</a></span></h3>
+      <a class="head-link" href="shoppingcart.html">CART</a>
       <br>
       <br>
       <h2>Original cinnamon roll</h2>
-      <p>
-        <img class="product-detail-image" src="assets/products/original-cinnamon-roll.jpg">
-      </p>
-      <p>
-        Customize our delicious,<br>
-        hand-made cinammon roll to<br>
-        your liking!
-      </p>
+      
+      <div class="product-unit">
+          <img class="product-detail-image" src="assets/products/original-cinnamon-roll.jpg">
+        <p>
+          Customize our delicious,<br>
+          hand-made cinammon roll to<br>
+          your liking!
+        </p>
 
-      <br>
-      <br>
+        <br>
 
-      <div>
-        Glazing:
+        <div class="glazing">
+          Glazing:
+          <select name="Glazing">
+            <option value="Keep original">Keep original</option>
+            <option value="Sugar milk">Sugar milk</option>
+            <option value="Vanilla milk">Vanilla milk</option>
+            <option value="Double chocolate">Double chocolate</option>
+          </select>
+        </div>
 
+        <br>
+
+        <div class="pack-size">
+          Pack size:
+          <select name="Glazing">
+            <option value="1">1</option>
+            <option value="3">3</option>
+            <option value="6">6</option>
+            <option value="12">12</option>
+          </select>
+        </div>
       </div>
-        
-      <br>
-
-      <div>
-        Pack size:
-          
-      </div>
 
       <br>
       <br>
 
-      <div>
-        $ 2.49 
+      <div class="add-to-cart">
+        $ 2.49
+        <button class="add-btn">
+          Add to Cart
+        </button>
       </div>
     </div>
   </body>
