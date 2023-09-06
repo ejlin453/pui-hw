@@ -30,6 +30,22 @@ hr {
     text-align: left;
 }
 
+.box {
+    display: inline-block;
+    text-align: left;
+    padding: 5px 5px;
+}
+
+.box:hover {
+    background-color:yellow;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.price {
+    font-weight: normal;
+}
+
 .btn:hover {
     background-color: yellow;
     border: 0px;
