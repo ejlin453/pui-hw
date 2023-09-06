@@ -24,12 +24,6 @@ hr {
     text-align: center;
 }
 
-.btn {
-    background-color: white;
-    border: 0px;
-    text-align: left;
-}
-
 .box {
     display: inline-block;
     text-align: left;
@@ -46,15 +40,13 @@ hr {
     font-weight: normal;
 }
 
-.btn:hover {
-    background-color: yellow;
-    border: 0px;
-    cursor: pointer;
-}
-
 a:hover {
     background-color: yellow;
     font-weight: bold;
+}
+
+.highlight {
+    background-color: yellow;
 }
 
 .product-detail-image {
@@ -76,7 +68,6 @@ a:hover {
     display: inline-block;
     text-align: left;
 }
-
 
 .add-btn {
     background-color: yellow;
@@ -112,9 +103,7 @@ a:hover {
     text-align: center;
 }
 
-.highlight {
-    background-color: yellow;
-}
+
 
 
 
