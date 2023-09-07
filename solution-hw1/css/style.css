@@ -36,6 +36,10 @@ hr {
     font-weight: bold;
 }
 
+select, option{
+    width:200px
+}
+
 .price {
     font-weight: normal;
 }
