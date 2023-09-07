@@ -40,8 +40,21 @@ select, option{
     width:200px
 }
 
+.product-name{
+    text-decoration: underline;
+}
+
 .price {
     font-weight: normal;
+}
+
+a{
+    color:#0a0a0a;
+    text-decoration: none;
+}
+
+a:visited{
+    color:#0a0a0a;
 }
 
 .highlight {
