@@ -76,6 +76,11 @@ a:visited{
     text-align: center;
 }
 
+.align-boxes{
+    display : inline-block;
+    text-align: right;
+}
+
 .product-details {
     display: inline-block;
     text-align: left;
@@ -115,8 +120,4 @@ a:visited{
     width: 100px;
     text-align: center;
 }
-
-
-
-
 
