@@ -1,3 +1,4 @@
+/* HW1 CSS */
 hr {
     border-top: 5px solid rgb(0, 0, 0);
 }
@@ -15,8 +16,8 @@ hr {
 }
 
 .product-image {
-    width: 400px;
-    height: 400px;
+    width: 285px;
+    height: 285px;
     border: 3px solid #0a0a0a
 }
 
@@ -34,10 +35,6 @@ hr {
     background-color:yellow;
     cursor: pointer;
     font-weight: bold;
-}
-
-select, option{
-    width:200px
 }
 
 .product-name{
@@ -86,12 +83,6 @@ a:visited{
     text-align: left;
 }
 
-.add-btn {
-    background-color: yellow;
-    width: 130px;
-    text-align: center;
-}
-
 .cart {
     text-align: center;
 }
@@ -121,3 +112,113 @@ a:visited{
     text-align: center;
 }
 
+body{
+    font-size: 20px;
+    font-family: Helvetica; 
+}
+
+/* HW2 header */
+
+.header {
+    display: flex;
+}
+
+.logo {
+    margin-left: auto;
+    width: 680px
+}
+
+.header-right{
+    width: 100%;
+}
+
+.navbar{
+    display: flex;
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+
+.select{
+    margin-left: auto;
+    margin-right: 0px;
+    font-weight: bold;
+
+}
+
+.unselect{
+    margin-left: 70px;
+    margin-right: 50px;
+}
+
+.title{
+    font-size: 33px;
+    margin-top: 55px;
+    margin-bottom: 70px;
+}
+
+/* HW2 gallery */
+
+.row{
+    display: flex;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.item{
+    margin-left: auto;
+    margin-right: auto; 
+    margin-bottom: 30px;
+}
+
+/* HW2 product detail */
+
+.product-page {
+    display: flex;
+}
+
+.product-info-image {
+    margin-left: 100px;
+}
+
+.product-info {
+    margin-top: 20px;
+    margin-left: 70px;
+}
+
+.order-text {
+    margin-bottom: 50px;
+}
+
+select, option {
+    width: 260px;
+    font-size: 20px;
+    padding: 10px 10px;
+    border: 2px solid black;
+}
+
+.order-cart {
+    display: flex;
+    margin-top: 150px;
+}
+
+.price {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: 0px;
+    font-weight: bold;
+}
+
+.cart-btn {
+    margin-left: auto;
+    margin-right: 0px
+}
+
+.add-btn {
+    background-color: yellow;
+    width: 150px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px 10px;
+}

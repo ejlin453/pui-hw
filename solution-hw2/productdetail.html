@@ -8,40 +8,74 @@
   <body>
     <div class="header">
       <div class="logo">
-
+        <a href="index.html"><img class="logo-image" src="assets/logo/logo-01.svg" 
+          alt="Bun Bun bake shop logo">
+        </a>
       </div>
       <div class="header-right">
           <div class="navbar">
               <div class="select">
-
+                <span class="highlight"><a class="head-link" href="index.html">PRODUCTS</a></span>
               </div>
               <div class="unselect">
-
+                <a class="head-link" href="shoppingcart.html">CART</a>
               </div>
           </div>
           <div class="line">
-
+            <hr>
           </div>
           <div class="title">
-
+            Original cinnamon roll
           </div>
       </div>
     </div>
 
-    <div class="product">
-      <div class="product-image">
 
+    <div class="product-page">
+      <div class="product-info-image">
+        <img class="product-detail-image" src="assets/products/original-cinnamon-roll.jpg" 
+        alt="image of original cinnamon roll">
       </div>
-      <div class="product-details">
+      <div class="product-info">
         <div class="order-text">
+          <p>
+            Customize our delicious,<br>
+            hand-made cinammon roll to<br>
+            your liking!
+          </p>
 
+          <br>
+          <br>
+          <br>
+
+          Glazing:<br>
+            <select name="Glazing">
+              <option value="Keep original">Keep original</option>
+              <option value="Sugar milk">Sugar milk</option>
+              <option value="Vanilla milk">Vanilla milk</option>
+              <option value="Double chocolate">Double chocolate</option>
+            </select>
+
+          <br>
+          <br>
+          <br>
+
+          Pack size:<br>
+            <select name="Glazing">
+              <option value="1">1</option>
+              <option value="3">3</option>
+              <option value="6">6</option>
+              <option value="12">12</option>
+            </select>
         </div>
         <div class="order-cart">
           <div class="price">
-          
+            $ 2.49 &nbsp;
           </div>
           <div class="cart-btn">
-          
+            <button class="add-btn" onclick="window.location.href='shoppingcart.html';">
+              Add to Cart
+            </button>
           </div>
         </div>
       </div>
