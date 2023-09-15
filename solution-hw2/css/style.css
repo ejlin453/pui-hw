@@ -1,0 +1,123 @@
+hr {
+    border-top: 5px solid rgb(0, 0, 0);
+}
+
+.logo-image {
+    width: 400px;
+}
+
+.logo:hover {
+    background-color: white;
+}
+
+.head-link {
+    text-decoration: none;
+}
+
+.product-image {
+    width: 400px;
+    height: 400px;
+    border: 3px solid #0a0a0a
+}
+
+.gallery {
+    text-align: center;
+}
+
+.box {
+    display: inline-block;
+    text-align: left;
+    padding: 5px 5px;
+}
+
+.box:hover {
+    background-color:yellow;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+select, option{
+    width:200px
+}
+
+.product-name{
+    text-decoration: underline;
+}
+
+.price {
+    font-weight: normal;
+}
+
+a{
+    color:#0a0a0a;
+    text-decoration: none;
+}
+
+a:visited{
+    color:#0a0a0a;
+}
+
+.highlight {
+    background-color: yellow;
+}
+
+.product-detail-image {
+    width: 600px;
+    height: 600px;
+    border: 3px solid #0a0a0a
+}
+
+.product {
+    display: block;
+    text-align: center;
+}
+
+.product-unit {
+    text-align: center;
+}
+
+.align-boxes{
+    display : inline-block;
+    text-align: right;
+}
+
+.product-details {
+    display: inline-block;
+    text-align: left;
+}
+
+.add-btn {
+    background-color: yellow;
+    width: 130px;
+    text-align: center;
+}
+
+.cart {
+    text-align: center;
+}
+
+.product-cart-image {
+    width: 200px;
+    height: 200px;
+    border: 3px solid #0a0a0a
+}
+
+.cart-hr {
+    border-top: 5px solid rgb(0, 0, 0);
+    width:600px
+}
+
+.remove-btn {
+    font-weight: bold;
+    background-color: white;
+    border: 0px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.checkout-btn {
+    background-color: yellow;
+    width: 100px;
+    text-align: center;
+}
+
