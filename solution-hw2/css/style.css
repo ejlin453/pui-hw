@@ -1,4 +1,10 @@
 /* HW1 CSS */
+
+body{
+    font-size: 19px;
+    font-family: Helvetica; 
+}
+
 hr {
     border-top: 5px solid rgb(0, 0, 0);
 }
@@ -83,19 +89,10 @@ a:visited{
     text-align: left;
 }
 
-.cart {
-    text-align: center;
-}
-
 .product-cart-image {
     width: 200px;
     height: 200px;
     border: 3px solid #0a0a0a
-}
-
-.cart-hr {
-    border-top: 5px solid rgb(0, 0, 0);
-    width:600px
 }
 
 .remove-btn {
@@ -106,16 +103,6 @@ a:visited{
     text-decoration: underline;
 }
 
-.checkout-btn {
-    background-color: yellow;
-    width: 100px;
-    text-align: center;
-}
-
-body{
-    font-size: 20px;
-    font-family: Helvetica; 
-}
 
 /* HW2 header */
 
@@ -134,20 +121,16 @@ body{
 
 .navbar{
     display: flex;
+    width: 300px;
+    margin-left: auto;
+    margin-right: 70px;
     margin-top: 45px;
     margin-bottom: 45px;
+    justify-content: space-between;
 }
 
 .select{
-    margin-left: auto;
-    margin-right: 0px;
     font-weight: bold;
-
-}
-
-.unselect{
-    margin-left: 70px;
-    margin-right: 50px;
 }
 
 .title{
@@ -162,12 +145,12 @@ body{
     display: flex;
     margin-left: 100px;
     margin-right: 100px;
+    justify-content: space-evenly;
 }
 
 .item{
-    margin-left: auto;
-    margin-right: auto; 
     margin-bottom: 30px;
+    padding: 5px 5px;
 }
 
 /* HW2 product detail */
@@ -193,7 +176,7 @@ select, option {
     width: 260px;
     font-size: 20px;
     padding: 10px 10px;
-    border: 2px solid black;
+    border: 3px solid black;
 }
 
 .order-cart {
@@ -206,7 +189,6 @@ select, option {
     margin-bottom: 10px;
     margin-left: auto;
     margin-right: 0px;
-    font-weight: bold;
 }
 
 .cart-btn {
@@ -221,4 +203,73 @@ select, option {
     font-weight: bold;
     font-size: 20px;
     padding: 10px 10px;
+    border: 3px solid black;
 }
+
+/* HW2  cart */
+
+.cart-product {
+    display: flex;
+}
+
+.cart-img {
+    margin-left: 440px;
+}
+
+.cart-details {
+    margin-left: 50px;
+    margin-top: 70px;
+    width: 370px;
+}
+
+.cart-price {
+    justify-content: flex-end;
+    margin-top: 95px;
+}
+
+.remove {
+    margin-left: 435px;
+    margin-bottom: 20px;
+}
+
+.cart-line {
+    margin-left: 440px;
+}
+
+.cart-hr {
+    border-top: 5px solid rgb(0, 0, 0);
+}
+
+.total {
+    margin-left: 700px;
+    display: flex;
+}
+
+.total-text {
+    width: 370px;
+}
+
+.total-cost {
+    justify-content: flex-end;
+}
+
+.checkout {
+    margin-left: 990px;
+    margin-top: 50px;
+}
+
+.checkout-btn {
+    background-color: yellow;
+    width: 100px;
+    text-align: center;
+    font-size: 19px;
+    font-weight: bold;
+    width: 150px;
+    padding: 5px 5px;
+    border: 3px solid black;
+}
+
+
+
+
+
