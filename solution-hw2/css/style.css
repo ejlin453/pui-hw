@@ -31,18 +31,6 @@ hr {
     text-align: center;
 }
 
-.box {
-    display: inline-block;
-    text-align: left;
-    padding: 5px 5px;
-}
-
-.box:hover {
-    background-color:yellow;
-    cursor: pointer;
-    font-weight: bold;
-}
-
 .product-name{
     text-decoration: underline;
 }
@@ -62,12 +50,7 @@ a:visited{
 
 .highlight {
     background-color: yellow;
-}
-
-.product-detail-image {
-    width: 600px;
-    height: 600px;
-    border: 3px solid #0a0a0a
+    font-weight: bold;
 }
 
 .product {
@@ -101,6 +84,7 @@ a:visited{
     border: 0px;
     text-align: center;
     text-decoration: underline;
+    cursor: pointer;
 }
 
 
@@ -111,7 +95,6 @@ a:visited{
 }
 
 .logo {
-    margin-left: auto;
     width: 680px
 }
 
@@ -123,14 +106,10 @@ a:visited{
     display: flex;
     width: 300px;
     margin-left: auto;
-    margin-right: 70px;
+    margin-right: 90px;
     margin-top: 45px;
     margin-bottom: 45px;
     justify-content: space-between;
-}
-
-.select{
-    font-weight: bold;
 }
 
 .title{
@@ -149,19 +128,32 @@ a:visited{
 }
 
 .item{
-    margin-bottom: 30px;
+    margin-bottom: 50px;
+    text-align: left;
     padding: 5px 5px;
+}
+
+.item:hover {
+    background-color:yellow;
+    cursor: pointer;
+    font-weight: bold;
 }
 
 /* HW2 product detail */
 
 .product-page {
     display: flex;
+    margin-right: 90px;
+    font-size: 26px;
 }
 
-.product-info-image {
-    margin-left: 100px;
+.product-detail-image {
+    width: 600px;
+    height: 600px;
+    border: 3px solid #0a0a0a;
+    margin-left: 120px;
 }
+
 
 .product-info {
     margin-top: 20px;
@@ -173,103 +165,87 @@ a:visited{
 }
 
 select, option {
-    width: 260px;
+    margin-top: 10px;
+    width: 100%;
     font-size: 20px;
     padding: 10px 10px;
     border: 3px solid black;
 }
 
 .order-cart {
-    display: flex;
     margin-top: 150px;
+    font-weight: bold;
+    text-align: right;
 }
 
 .price {
-    margin-top: 10px;
+    margin-top: 12px;
     margin-bottom: 10px;
     margin-left: auto;
     margin-right: 0px;
+    font-weight: bold;
 }
 
 .cart-btn {
     margin-left: auto;
-    margin-right: 0px
+    margin-right: 0px;
+    cursor: pointer;
 }
 
 .add-btn {
     background-color: yellow;
-    width: 150px;
     text-align: center;
     font-weight: bold;
-    font-size: 20px;
-    padding: 10px 10px;
+    padding: 10px 20px;
     border: 3px solid black;
+    cursor: pointer;
+    margin-left: 30px;
+    font-size: 26px;
 }
 
 /* HW2  cart */
 
-.cart-product {
-    display: flex;
+.cart{
+    margin-left: 440px;
+    font-size: 26px;
 }
 
-.cart-img {
-    margin-left: 440px;
+.cart-product {
+    display: flex;
+    align-items: center;
 }
 
 .cart-details {
     margin-left: 50px;
-    margin-top: 70px;
-    width: 370px;
 }
 
 .cart-price {
-    justify-content: flex-end;
-    margin-top: 95px;
+    margin-left: auto;
+    margin-right: 90px;
+    text-align: left;
 }
 
 .remove {
-    margin-left: 435px;
     margin-bottom: 20px;
-}
-
-.cart-line {
-    margin-left: 440px;
-}
-
-.cart-hr {
-    border-top: 5px solid rgb(0, 0, 0);
+    margin-top: -8px;
 }
 
 .total {
-    margin-left: 700px;
+    margin-left: 260px;
+    margin-right: 70px;
     display: flex;
 }
 
-.total-text {
-    width: 370px;
-}
-
 .total-cost {
-    justify-content: flex-end;
+    margin-left: auto;
+    margin-right: 20px;
 }
 
 .checkout {
-    margin-left: 990px;
     margin-top: 50px;
+    margin-right: 70px;
+    text-align: right;
 }
-
-.checkout-btn {
-    background-color: yellow;
-    width: 100px;
-    text-align: center;
-    font-size: 19px;
-    font-weight: bold;
-    width: 150px;
-    padding: 5px 5px;
-    border: 3px solid black;
-}
-
-
 
 
 
