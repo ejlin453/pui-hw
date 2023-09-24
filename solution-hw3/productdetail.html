@@ -3,6 +3,7 @@
   <meta charset="UTF-8">
   <title>Bun Bun bake shop</title>
   <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/productdetail.js"></script>
   <!---only show original cinnamon roll-->
 
   <body>
@@ -41,22 +42,14 @@
           <br>
 
           Glazing:<br>
-            <select name="Glazing">
-              <option value="Keep original">Keep original</option>
-              <option value="Sugar milk">Sugar milk</option>
-              <option value="Vanilla milk">Vanilla milk</option>
-              <option value="Double chocolate">Double chocolate</option>
+            <select id="glazingOptions" onchange = "glazingChange(this)">
             </select>
 
           <br>
           <br>
 
           Pack size:<br>
-            <select name="Glazing">
-              <option value="1">1</option>
-              <option value="3">3</option>
-              <option value="6">6</option>
-              <option value="12">12</option>
+            <select id="packOptions" onchange = "packChange(this)">
             </select>
         </div>
         <div class="order-cart">
