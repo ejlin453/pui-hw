@@ -1,0 +1,242 @@
+/* HW1 CSS */
+
+body{
+    font-size: 19px;
+    font-family: Helvetica; 
+}
+
+hr {
+    border-top: 5px solid rgb(0, 0, 0);
+}
+
+.logo-image {
+    width: 400px;
+}
+
+.logo:hover {
+    background-color: white;
+}
+
+.head-link {
+    text-decoration: none;
+}
+
+.product-image {
+    width: 285px;
+    height: 285px;
+    border: 3px solid #0a0a0a
+}
+
+.gallery {
+    text-align: center;
+}
+
+.product-name{
+    text-decoration: underline;
+}
+
+a{
+    color:#0a0a0a;
+    text-decoration: none;
+}
+
+a:visited{
+    color:#0a0a0a;
+}
+
+.highlight {
+    background-color: yellow;
+    font-weight: bold;
+}
+
+.product {
+    display: block;
+    text-align: center;
+}
+
+.product-unit {
+    text-align: center;
+}
+
+.align-boxes{
+    display : inline-block;
+    text-align: right;
+}
+
+.product-details {
+    display: inline-block;
+    text-align: left;
+}
+
+.product-cart-image {
+    width: 200px;
+    height: 200px;
+    border: 3px solid #0a0a0a
+}
+
+.remove-btn {
+    font-weight: bold;
+    background-color: white;
+    border: 0px;
+    text-align: center;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+/* HW2 header */
+
+.header {
+    display: flex;
+}
+
+.logo {
+    width: 680px
+}
+
+.header-right{
+    width: 100%;
+}
+
+.navbar{
+    display: flex;
+    width: 300px;
+    margin-left: auto;
+    margin-right: 90px;
+    margin-top: 45px;
+    margin-bottom: 45px;
+    justify-content: space-between;
+}
+
+.title{
+    font-size: 33px;
+    margin-top: 55px;
+    margin-bottom: 70px;
+}
+
+/* HW2 gallery */
+
+.row{
+    display: flex;
+    margin-left: 100px;
+    margin-right: 100px;
+    justify-content: space-evenly;
+}
+
+.item{
+    margin-bottom: 50px;
+    text-align: left;
+    padding: 5px 5px;
+}
+
+.item:hover {
+    background-color:yellow;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.gallery-price {
+    font-weight: normal;
+}
+
+/* HW2 product detail */
+
+.product-page {
+    display: flex;
+    margin-right: 90px;
+    font-size: 26px;
+}
+
+.product-detail-image {
+    width: 600px;
+    height: 600px;
+    border: 3px solid #0a0a0a;
+    margin-left: 120px;
+}
+
+.product-info {
+    margin-top: 20px;
+    margin-left: 70px;
+}
+
+.order-text {
+    margin-bottom: 50px;
+}
+
+select, option {
+    margin-top: 10px;
+    width: 100%;
+    font-size: 20px;
+    padding: 10px 10px;
+    border: 3px solid black;
+}
+
+.order-cart {
+    margin-top: 150px;
+    font-weight: bold;
+    text-align: right;
+}
+
+.cart-btn {
+    margin-left: auto;
+    margin-right: 0px;
+    cursor: pointer;
+}
+
+.add-btn {
+    background-color: yellow;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 3px solid black;
+    cursor: pointer;
+    margin-left: 30px;
+    font-size: 20px;
+}
+
+/* HW2  cart */
+
+.cart{
+    margin-left: 440px;
+}
+
+.cart-product {
+    display: flex;
+    align-items: center;
+}
+
+.cart-details {
+    margin-left: 50px;
+    width: 300px;
+    text-align: left;
+}
+
+.cart-price {
+    margin-left: auto;
+    margin-right: 90px;
+    text-align: right;
+}
+
+.remove {
+    margin-bottom: 20px;
+    margin-top: -8px;
+}
+
+.total {
+    margin-left: 200px;
+    display: flex;
+}
+
+.total-cost {
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.checkout {
+    margin-top: 50px;
+    margin-right: 90px;
+    text-align: right;
+}
+
+
+
