@@ -44,7 +44,7 @@ let selectGlaze = document.querySelector('#glazingOptions');
 for (let glazing of allGlazing) {
   var option = document.createElement('option');
   option.text = glazing.glaze;
-  option.value = allGlazing.length - 1;
+  option.value = glazing.glazePrice;
   selectGlaze.add(option);
 }
 
@@ -53,24 +53,36 @@ let selectPack = document.querySelector('#packOptions');
 for (let sizing of allPacks) {
   var option = document.createElement('option');
   option.text = sizing.size;
-  option.value = allPacks.length - 1;
+  option.value = sizing.sizePrice;
   selectPack.add(option);
 }
 
-
+const basePrice = 2.49;
+let glazingPrice = 0;
+let packPrice = 1;
 
 function glazingChange(element) {
   // get value of selected glazing option
-  const priceChange = element.value;
-  
-// add your code to do update the price ...
-
+  let priceChange = element.value;
+  // add your code to do update the price ...
+  glazingPrice = parseFloat(priceChange);
+  console.log(glazingPrice);
+  priceCalculation(basePrice, glazingPrice, packPrice);
 }
 
-// We also need to add this new car to the UI. To do that, create a new
-// 'option' HTML element, set its attributes, and add it to the select
-// element.
-var option = document.createElement('option');
-option.text = newCar.model;
-option.value = allCars.length - 1; // Its value should be the index of the last element in allCars
-selectElement.add(option);
+function packChange(element) {
+  let priceChange = element.value;
+  packPrice = parseInt(priceChange);
+  console.log(packPrice);
+  priceCalculation(basePrice, glazingPrice, packPrice);
+}
+
+function priceCalculation(basePrice, glazingPrice, packPrice) {
+  let totalPrice = 0;
+  totalPrice = (basePrice + glazingPrice) * packPrice;
+  totalPrice = totalPrice.toFixed(2);
+  let currentPrice = document.querySelector('.priceUpdate');
+  currentPrice.innerText = "$ " + totalPrice.toString();
+}
+
+priceUpdate = priceCalculation(basePrice, glazingPrice, packPrice);
