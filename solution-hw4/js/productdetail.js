@@ -37,6 +37,39 @@ let allPacks = [
   },
 ];
 
+let cart = [
+
+];
+
+// Shopping cart implementation
+class Roll {
+  constructor(rollType, rollGlazing, packSize, basePrice) {
+      this.type = rollType;
+      this.glazing = rollGlazing;
+      this.size = packSize;
+      this.basePrice = basePrice;
+  }
+}
+
+function addCart() {
+  let addRoll = new Roll(rollType, rollGlazing, packSize, basePrice);
+  cart.push(addRoll);
+  console.log(cart);
+}
+
+// URL params
+const queryString = window.location.search;
+const params = new URLSearchParams(queryString);
+const rollType = params.get('roll');
+
+console.log(rollType);
+
+const headerElement = document.querySelector('.title');
+headerElement.innerText = rollType + ' cinnamon roll';
+
+const rollImage = document.querySelector('.product-detail-image');
+rollImage.src = 'assets/products/' + rolls[rollType].imageFile;
+rollImage.alt = "image of "+ rollType +" cinnamon roll";
 
 // dropdowns
 let selectGlaze = document.querySelector('#glazingOptions');
@@ -57,21 +90,26 @@ for (let sizing of allPacks) {
   selectPack.add(option);
 }
 
-const basePrice = 2.49;
+
+// Price calculations
+const basePrice = rolls[rollType].basePrice;
 let glazingPrice = 0;
 let packPrice = 1;
+let rollGlazing = allGlazing[0].glaze;
+let packSize = allPacks[0].size;
 
 function glazingChange(element) {
   // get value of selected glazing option
   let priceChange = element.value;
+  rollGlazing = element.options[element.selectedIndex].text;
   // add your code to do update the price ...
   glazingPrice = parseFloat(priceChange);
-  console.log(glazingPrice);
   priceCalculation(basePrice, glazingPrice, packPrice);
 }
 
 function packChange(element) {
   let priceChange = element.value;
+  packSize = element.options[element.selectedIndex].text;
   packPrice = parseInt(priceChange);
   console.log(packPrice);
   priceCalculation(basePrice, glazingPrice, packPrice);
@@ -86,3 +124,5 @@ function priceCalculation(basePrice, glazingPrice, packPrice) {
 }
 
 priceUpdate = priceCalculation(basePrice, glazingPrice, packPrice);
+
+
