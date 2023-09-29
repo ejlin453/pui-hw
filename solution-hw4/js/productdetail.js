@@ -20,19 +20,19 @@ let allGlazing = [
 
 let allPacks = [
   {
-    size: 1,
+    size: '1',
     sizePrice: 1, 
   },
   {
-    size: 3,
+    size: '3',
     sizePrice: 3,
   },
   {
-    size: 6,
+    size: '6',
     sizePrice: 5,
   },
   {
-    size: 12,
+    size: '12',
     sizePrice: 10,
   },
 ];
