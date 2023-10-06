@@ -83,6 +83,7 @@ function priceCalculation(basePrice, glazingPrice, packPrice) {
   totalPrice = totalPrice.toFixed(2);
   let currentPrice = document.querySelector('.priceUpdate');
   currentPrice.innerText = "$ " + totalPrice.toString();
+  return totalPrice;
 }
 
 priceUpdate = priceCalculation(basePrice, glazingPrice, packPrice);
