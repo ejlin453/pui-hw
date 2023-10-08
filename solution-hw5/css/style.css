@@ -209,6 +209,7 @@ select, option {
     margin-left: 50px;
     width: 300px;
     text-align: left;
+    line-height: 1.6;
 }
 
 .cart-price {
@@ -217,9 +218,14 @@ select, option {
     text-align: right;
 }
 
+.cart-total-price {
+    margin-left: auto;
+    margin-right: 90px;
+    text-align: right;
+}
+
 .remove {
     margin-bottom: 20px;
-    margin-top: -8px;
 }
 
 .total {
@@ -238,5 +244,11 @@ select, option {
     text-align: right;
 }
 
+.cart-hr {
+    margin-right:90px;
+    border-top: 5px solid rgb(0, 0, 0);
+}
 
-
+.cart-bottom {
+    margin-left: 440px;
+}
