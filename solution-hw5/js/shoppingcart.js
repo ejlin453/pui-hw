@@ -59,12 +59,15 @@ let cartPrice = 0.;
 for (const roll of cartSet) {
     console.log(roll);
     createElement(roll);
-    cartPrice += parseFloat(roll.price);
+    cartPrice += parseFloat(roll.price,2);
 }
 
 displayTotal(cartPrice);
 
 function displayTotal(cartPrice){
+    if (cartSet.size == 0) {
+        cartPrice = 0;
+    }
     const priceElement = document.querySelector('.cart-total-price');
     priceElement.innerText = "$ " + cartPrice.toFixed(2);
 }
@@ -98,7 +101,7 @@ function updateElement(roll) {
 function deleteRoll(roll) {
     roll.element.remove();
     cartSet.delete(roll);
-    cartPrice -= parseFloat(roll.price);
+    cartPrice -= parseFloat(roll.price,2);
     displayTotal(cartPrice);
 }
 
