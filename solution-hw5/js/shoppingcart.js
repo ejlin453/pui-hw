@@ -54,7 +54,7 @@ rollPrice = rolls[rollType].basePrice;
 console.log("rollprice 4 " + rollType + rollPrice);
 const rollFour = addNewRoll(rollType, rollGlazing, packSize, rollPrice);
 
-let cartPrice = 0;
+let cartPrice = 0.;
 
 for (const roll of cartSet) {
     console.log(roll);
