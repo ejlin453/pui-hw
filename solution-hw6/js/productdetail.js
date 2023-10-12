@@ -15,15 +15,38 @@ class Roll {
 function addCart() {
   let addRoll = new Roll(rollType, rollGlazing, packSize, basePrice);
   cart.push(addRoll);
+  saveToLocalStorage();
+}
+
+// storage
+function saveToLocalStorage() {
+  const cartString = JSON.stringify(cart);
   console.log(cart);
+
+  localStorage.setItem('storedCart', cartString);
+}
+
+function retrieveFromLocalStorage() {
+  const cartString = localStorage.getItem('storedCart');
+  const cartArray = JSON.parse(cartString);
+  for (const rollData of cartArray) {
+    //create new roll
+    const roll = new Roll(rollData.type, rollData.glazing, 
+      rollData.size, rollData.basePrice);
+    //add to cart[]
+    cart.push(roll);
+  }
+  console.log(cartArray);
+}
+
+if (localStorage.getItem('storedCart') != null) {
+  retrieveFromLocalStorage();
 }
 
 // URL params
 const queryString = window.location.search;
 const params = new URLSearchParams(queryString);
 const rollType = params.get('roll');
-
-console.log(rollType);
 
 const headerElement = document.querySelector('.title');
 headerElement.innerText = rollType + ' cinnamon roll';
@@ -72,7 +95,6 @@ function packChange(element) {
   let priceChange = element.value;
   packSize = element.options[element.selectedIndex].text;
   packPrice = parseInt(priceChange);
-  console.log(packPrice);
   priceCalculation(basePrice, glazingPrice, packPrice);
 }
 
@@ -85,5 +107,7 @@ function priceCalculation(basePrice, glazingPrice, packPrice) {
 }
 
 priceUpdate = priceCalculation(basePrice, glazingPrice, packPrice);
+
+
 
 

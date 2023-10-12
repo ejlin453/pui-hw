@@ -20,37 +20,35 @@ let rollGlazing = "";
 let packSize = "";
 let rollPrice = "";
 
-rollType = "Original"
-rollGlazing = "Sugar milk";
-packSize = "1";
-rollPrice = rolls[rollType].basePrice;
-const rollOne = addNewRoll(rollType, rollGlazing, packSize, rollPrice);
-
-rollType = "Walnut"
-rollGlazing = "Vanilla milk";
-packSize = "12";
-rollPrice = rolls[rollType].basePrice;
-const rollTwo = addNewRoll(rollType, rollGlazing, packSize, rollPrice);
-
-rollType = "Raisin"
-rollGlazing = "Sugar milk";
-packSize = "3";
-rollPrice = rolls[rollType].basePrice;
-const rollThree = addNewRoll(rollType, rollGlazing, packSize, rollPrice);
-
-rollType = "Apple"
-rollGlazing = "Keep original";
-packSize = "3";
-rollPrice = rolls[rollType].basePrice;
-const rollFour = addNewRoll(rollType, rollGlazing, packSize, rollPrice);
-
 let cartPrice = 0.;
 
-for (const roll of cartSet) {
-    createElement(roll);
-}
-console.log("cart",cartSet);
+//storage
+function saveToLocalStorage() {
+  const cartArray = Array.from(cartSet);
+  const cartString = JSON.stringify(cartArray);
+  console.log(cartArray);
 
+  localStorage.setItem('storedCart', cartString);
+}
+
+function retrieveFromLocalStorage() {
+  const cartString = localStorage.getItem('storedCart');
+  const cartArray = JSON.parse(cartString);
+  for (const rollData of cartArray) {
+    const roll = addNewRoll(rollData.type, rollData.glazing, 
+      rollData.size, rollData.basePrice);;
+    createElement(roll);
+  }
+  console.log(cartArray);
+}
+
+if (localStorage.getItem('storedCart') != null) {
+  retrieveFromLocalStorage();
+}
+
+displayTotal(cartPrice);
+
+// create cart
 function displayTotal(cartPrice){
     if (cartSet.size == 0) {
         cartPrice = 0.;
@@ -103,9 +101,8 @@ function deleteRoll(roll) {
     //Update DOM elements
     displayTotal(cartPrice);
 
-    console.log("delete",cartSet)
+    saveToLocalStorage();  
 }
-
 
 // Price calculation for cart
 function getGlazingPrice (rollGlazing) {
@@ -115,7 +112,6 @@ function getGlazingPrice (rollGlazing) {
       return glazingPrice;
     }
   }
-  console.log(glazingPrice);
 }
 
 function getPackPrice (packSize) {
