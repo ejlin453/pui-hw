@@ -323,6 +323,14 @@ h1 {
     justify-content: space-evenly;
 }
 
+.title-page-image {
+	width: auto;
+	height: auto;
+	filter: drop-shadow(10px 10px 4px grey);
+	margin-left: 20px;
+  	margin-right: 20px;
+}
+
 .page-image {
 	width: auto;
 	height: 250px;
@@ -340,7 +348,7 @@ h1 {
 .arrow{
 	width: 140px;
 	height: 50px;
-	margin-left: auto;
+	margin-left: 190px;
 	margin-right: auto;
 }
 
