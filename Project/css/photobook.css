@@ -97,26 +97,7 @@ h2 {
 	margin-right: auto;
 	margin-left: auto;
 }
-@media (min-width: 576px) {
-	.container {
-		max-width: 540px;
-	}
-}
-@media (min-width: 768px) {
-	.container {
-		max-width: 720px;
-	}
-}
-@media (min-width: 992px) {
-	.container {
-		max-width: 960px;
-	}
-}
-@media (min-width: 1200px) {
-	.container {
-		max-width: 1140px;
-	}
-}
+
 @media (min-width: 576px) {
 	.container {
 		max-width: 540px;
@@ -367,19 +348,6 @@ h1 {
 	border-top: solid 1px #f4e8d7;
 }
 
-@media (max-width: 480px) {
-	.page .page-content .page-text {
-		height: 100%;
-		flex-grow: 1;
-		font-size: 200%;
-		text-align: justify;
-		margin-top: 10px;
-		padding-top: 10px;
-		box-sizing: border-box;
-		border-top: solid 1px #f4e8d7;
-	}
-}
-
 .page .page-content .page-footer {
 	height: 30px;
 	border-top: solid 1px #f4e8d7;
@@ -397,7 +365,7 @@ h1 {
 .page.--right .page-footer {
 	text-align: right;
 }
-/*! CSS Used from: Embedded */
+
 .stf__wrapper {
 	position: relative;
 	display: block;
