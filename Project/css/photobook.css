@@ -1,3 +1,49 @@
+.row {
+	display: flex;
+	margin-left: 100px;
+    margin-right: 100px;
+	margin-top: 50px;
+    margin-bottom: 20px;
+    justify-content: space-evenly;
+}
+
+.title-page-image {
+	width: auto;
+	height: auto;
+	filter: drop-shadow(10px 10px 4px grey);
+	margin-left: 20px;
+  	margin-right: 20px;
+}
+
+.page-image {
+	width: auto;
+	height: 250px;
+	filter: drop-shadow(10px 10px 4px grey);
+	margin-left: 20px;
+  	margin-right: 20px;
+}
+
+.back-link{
+	margin-top: 100px;
+	font-size: 20px;
+	text-align: center;
+}
+
+.memory{
+	font-size: 20px;
+	text-align: justify;
+}
+
+.gallery-btn{
+	font-size: 20px;
+	padding: 10px;
+	background-color: rgb(201, 248, 243);
+}
+
+/* This code below is from the St Page Flip library. This CSS organized the page layout and elements of each memory book. I changed and added some 
+of my own elements to implement my planned page designs and organize my page information. 
+Source: https://codepen.io/casper392945/pen/vYNMPBK*/
+
 /*! CSS Used from: https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css */
 *,
 ::after,
@@ -303,70 +349,12 @@ h1 {
 	text-align: center;
 }
 
-/* may not need this below */
 .page .page-content {
 	width: auto;
 	height: 300px;
 	margin-left: auto;
   	margin-right: auto;
-	/* background-size: contain; */
-	/* background-position: center center; */
-	/* background-repeat: no-repeat; */
 }
-
-/* My code */
-.row {
-	display: flex;
-	margin-left: 100px;
-    margin-right: 100px;
-	margin-top: 50px;
-    margin-bottom: 20px;
-    justify-content: space-evenly;
-}
-
-.title-page-image {
-	width: auto;
-	height: auto;
-	filter: drop-shadow(10px 10px 4px grey);
-	margin-left: 20px;
-  	margin-right: 20px;
-}
-
-.page-image {
-	width: auto;
-	height: 250px;
-	filter: drop-shadow(10px 10px 4px grey);
-	margin-left: 20px;
-  	margin-right: 20px;
-}
-
-.back-link{
-	margin-top: 100px;
-	font-size: 20px;
-	text-align: center;
-}
-
-.arrow{
-	width: 140px;
-	height: 50px;
-	margin-left: 190px;
-	margin-right: auto;
-}
-
-.memory{
-	font-size: 20px;
-	text-align: justify;
-}
-
-.gallery-btn{
-	font-size: 20px;
-	padding: 10px;
-	background-color: rgb(201, 248, 243);
-}
-
-
-
-/* outsourced code */
 
 .page .page-content .page-text {
 	height: 100%;

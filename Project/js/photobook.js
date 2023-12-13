@@ -1,3 +1,6 @@
+/* This code below is from the St Page Flip library. The JS is used to implement and execute the page flip animations and functions
+for each memory page photobook. 
+Source: https://codepen.io/casper392945/pen/vYNMPBK*/
 !(function (t) {
 	var e = {};
 	function i(s) {

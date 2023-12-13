@@ -1,3 +1,7 @@
+/* The following code is from the Hover Effect 3 in Image Hover Effects from the Bootstrap libary. This was used to
+implement the hover effect to blur the images and display text for each memory photo on my gallery page. I edited and added some
+elements to better display my implemented information and changed the spacing to improve readability. 
+Source: https://miketricking.github.io/bootstrap-image-hover/*/
 .hovereffect {
   width: 100%;
   height: 100%;

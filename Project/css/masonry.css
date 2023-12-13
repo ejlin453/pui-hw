@@ -28,7 +28,9 @@ body {
   border-top: 5px solid rgb(0, 0, 0);
 }
 
-/* masonry code */
+/* The following code was adopted from Masonry, which is a cascading grid library. This was implemented to 
+mimic the Pinterest layout for my gallery page memory photos.
+Source: https://masonry.desandro.com/#download*/
 .container {
   width: 1400px;
   margin: 20px auto;
@@ -63,7 +65,7 @@ body {
   }
 }
 
-/* Mobile Screen iPhone 14 Pro Max*/
+/* Mobile Screen iPhone 12 Pro*/
 @media (max-width: 480px) {
   .container {
     columns: 1;
