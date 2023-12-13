@@ -170,7 +170,7 @@ h2 {
 }
 .btn-info {
 	color: #fff;
-	background-color: #17a2b8;
+	background-color: #127180;
 	border-color: #17a2b8;
 }
 .btn-info:hover {
@@ -353,19 +353,18 @@ h1 {
 	margin-right: auto;
 }
 
-@media (max-width: 480px) {
-	.arrow {
-		width: 140px;
-		height: 50px;
-	  	margin-left: 300px;
-	  	margin-right: auto;
-	}
-}
-
 .memory{
 	font-size: 20px;
 	text-align: justify;
 }
+
+.gallery-btn{
+	font-size: 20px;
+	padding: 10px;
+	background-color: rgb(201, 248, 243);
+}
+
+
 
 /* outsourced code */
 
@@ -379,6 +378,20 @@ h1 {
 	box-sizing: border-box;
 	border-top: solid 1px #f4e8d7;
 }
+
+@media (max-width: 480px) {
+	.page .page-content .page-text {
+		height: 100%;
+		flex-grow: 1;
+		font-size: 200%;
+		text-align: justify;
+		margin-top: 10px;
+		padding-top: 10px;
+		box-sizing: border-box;
+		border-top: solid 1px #f4e8d7;
+	}
+}
+
 .page .page-content .page-footer {
 	height: 30px;
 	border-top: solid 1px #f4e8d7;
