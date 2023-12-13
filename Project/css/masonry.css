@@ -47,6 +47,7 @@ body {
   border-radius: 15px;
 }
 
+/* Responsive design */
 /* Computer Screen */
 @media (max-width: 1200px) {
   .container {
@@ -62,9 +63,36 @@ body {
   }
 }
 
-/* Mobile Screen */
+/* Mobile Screen iPhone 14 Pro Max*/
 @media (max-width: 480px) {
   .container {
-    columns: 2;
+    columns: 1;
+  }
+
+  .header {
+    display: block;
+  }
+
+  .logo-image {
+    margin-top: 50px;
+    margin-left: 100px;
+    max-width: 200px;
+  }
+  
+  .text {
+    margin-top: 25px;
+    margin-left: 75px;
+    margin-right: 100px;
+    text-align: center;
+  }
+  
+  .title-hr {
+    border-top: 2px solid rgb(0, 0, 0);
+  }
+  
+  .gallery-hr {
+    margin-left: 100px;
+    margin-right: 100px;
+    border-top: 5px solid rgb(0, 0, 0);
   }
 }
